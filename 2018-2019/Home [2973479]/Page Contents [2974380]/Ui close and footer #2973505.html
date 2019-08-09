@@ -1,0 +1,16 @@
+    <page-footer></page-footer>
+  </div>
+%begin_globals_get_dev%
+<!--@@ in dev mode append ?dev=vX.X.X to URL to test a version on a page @@-->
+<script src="https://d2glwx35mhbfwf.cloudfront.net/%globals_get_dev%/ui.js?v=1.0"></script>
+%else_globals%
+<script src="https://d2glwx35mhbfwf.cloudfront.net/v4.10.0/ui.js?v=1.0"></script>
+%end_globals%
+
+  <script type="text/javascript">
+window.utag_data = window.utag_data || {};
+window.utag_data.platform = "matrix-controlled-environment";
+  </script><!-- custom site footer extras -->
+
+</body>
+</html>
